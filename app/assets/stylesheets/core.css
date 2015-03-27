@@ -44,14 +44,17 @@ html.home{
 }
 
 #home .hero{
-	width: 100%;
-	height: 600px;
-	background: url(/assets/home/hero1.png) center center no-repeat;
-	background-size: 1600px 600px;
-	overflow: hidden;
-	position: relative;
-	letter-spacing: .09em;
-	margin: 0 auto;
+    width: 100%;
+    height: 480px;
+    background: url(/assets/home/hero1.jpg) right -90px no-repeat;
+    /*background: url(/assets/home/hero1.jpg) center -90px no-repeat;*/
+
+    background-size: 900px 570px;
+    overflow: hidden;
+    position: relative;
+    letter-spacing: .09em;
+    margin: 0 auto;
+    background-color: rgb(252, 252, 252);
 }
 
 #home .hero .large{
@@ -59,7 +62,7 @@ html.home{
     font-size: 40px;
     text-align: center;
     text-transform: uppercase;
-    margin: 90px 0 0 100px;
+    margin: 90px 0 0 50px;
     position: relative;
     width: 40%;
     z-index: 2;
@@ -77,7 +80,7 @@ html.home{
 	font-weight: bold;
 	color: #074E6F;
 	font-size: 18px;
-	margin: 10px 0 0 100px;
+	margin: 10px 0 0 50px;
 	line-height: 30px;
 	position: relative;
 	z-index: 2;
@@ -88,7 +91,7 @@ html.home{
 }
 
 #home .hero .small span {
-    background-color: rgba(218, 218, 218, 0.55);
+    background-color: rgba(218, 218, 218, 0.57);
     /* line-height: 28px; */
     padding: 0 5px 0 5px;
 }
@@ -278,7 +281,7 @@ html.home{
 
 #refer .header{
 	height: 50px;
-	background: #074E6F;
+	background: #FF9736;
 	width: 100%;
 	overflow:hidden;
 	z-index: 1;
@@ -304,15 +307,10 @@ html.home{
 #refer .header .logo{
     float: left;
     font-weight: normal;
-    font-size: 0;
-    line-height: 0;
-    margin-right: 14px;
-    letter-spacing: 1px;
-    background: url(/assets/refer/logo.jpg) 0 0 no-repeat;
-    background-size: 113px 37px;
-    height: 37px;
-    width: 113px;
-    margin-top: 7px;
+    background: url(/assets/refer/logo.png) 0 0 no-repeat;
+    background-size: 325px 50px;
+    height: 50px;
+    width: 325px;
 }
 
 #refer .hero{
@@ -546,6 +544,29 @@ html.home{
 	bottom: -15px;
 }
 
+#refer .prizes .products li.product .small-price-label{
+    height: 36px;
+    padding-top: 12px;
+    width: 120px;
+    margin-left: 50px;
+    background-color: rgb(112, 136, 178);
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: 10px;
+}
+
+#refer .prizes .products li.product .big-price-label{
+    padding-top: 12px;
+    background-color: rgb(112, 136, 178);
+    color: white;
+    font-size: 20px;
+    width: 200px;
+    margin-left: 10px;
+    height: 58px;
+    position: relative;
+}
+
 #refer .prizes .products li.product.selected .caret{
 	background: url(/assets/refer/caret-selected.png) center center no-repeat;
 	background-size: 16px 10px;
@@ -607,7 +628,7 @@ html.home{
 	color: #074E6F;
 	width: 100%;
 	font-weight: 500;
-	margin-top: 30px;
+	margin-top: 40px;
 }
 
 #refer .prizes p.place span{
@@ -653,8 +674,8 @@ only screen and (-o-min-device-pixel-ratio: 2/1),
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min-device-pixel-ratio: 2) {
 	#home .hero{
-		background: url(/assets/home/hero@2x.png) center center no-repeat;
-		background-size: 1600px 446px;
+		background: url(/assets/home/hero@2x.jpg) right -90px no-repeat;
+		background-size: 900px 570px;
 	}
 
 	#home .form-wrap .key{
@@ -664,8 +685,8 @@ only screen and (min-device-pixel-ratio: 2) {
 
 	#refer .header .logo{
 		background: url(/assets/refer/logo@2x.png) 0 0 no-repeat;
-		background-size: 106px 19px;
-	}
+        background-size: 325px 50px;
+    }
 
 	#refer .mammoth{
 		background: url(/assets/refer/mammoth@2x.png) 0 0 no-repeat;

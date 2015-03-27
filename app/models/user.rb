@@ -13,25 +13,25 @@ class User < ActiveRecord::Base
   REFERRAL_STEPS = [
         {
             'count' => 5,
-            "html" => "SIDEKIQ QB Challenge<br>($5 Value)",
+            "html" => "$20 Off",
             "class" => "two",
             "image" =>  ActionController::Base.helpers.asset_path("refer/cream-tooltip@2x.png")
         },
         {
             'count' => 10,
-            "html" => "Cover 2 Totorial<br>($10 Value)",
+            "html" => "$40 Off",
             "class" => "three",
             "image" => ActionController::Base.helpers.asset_path("refer/truman@2x.png")
         },
         {
             'count' => 25,
-            "html" => "Cover 2<br>Cover 3<br>($20 Value)",
+            "html" => "$75 Off",
             "class" => "four",
             "image" => ActionController::Base.helpers.asset_path("refer/winston@2x.png")
         },
         {
             'count' => 50,
-            "html" => "SIDEKIQ Challenge with Steve<br>Clarkson ($39 Value)",
+            "html" => "EON Sports VR<br>Headset Free",
             "class" => "five",
             "image" => ActionController::Base.helpers.asset_path("refer/blade-explain@2x.png")
         }

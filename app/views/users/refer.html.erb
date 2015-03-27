@@ -1,7 +1,6 @@
 <div class="header">
     <div class="content">
         <p class="logo brandon"></p>
-        <p class="byline brandon">THANK YOU FOR SIGNING UP</p>
     </div>
 </div>
 
@@ -16,9 +15,9 @@
             <p class="title brandon">INVITE FRIENDS &<br>Earn Product</p>
             <p class="subtitle brandon">Share your unique link via email, Facebook<br>or Twitter and earn goods for<br>each friend who signs up.</p>
             <div class="copy-link brandon"><%= root_url %>?ref=<%= @user.referral_code %></div>
-            <% twitter_message = "Can't wait for #EON Sports to launch. I'm going to be #EON Sports for free." %>
+            <% twitter_message = "Can't wait for @EONSportsVR to launch. I'm going to be #QB Training for free." %>
             <div class="social-links">
-                <a class="fb facebook popup" data-type="facebook" href="https://www.facebook.com/sharer/sharer.php?u=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&title=EON Sports?v=1"></a>
+                <a class="fb facebook popup" data-type="facebook" href="https://www.facebook.com/sharer/sharer.php?u=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&title=EON Sports?v=2"></a>
                 <div class="sep"></div>
                 <a class="twit twitter popup" data-type="twitter" href="http://twitter.com/share?url=<%= CGI::escape(root_url) %>?ref=<%= CGI::escape(@user.referral_code) %>&text=<%= CGI::escape(twitter_message) %>"></a>
             </div>
@@ -51,11 +50,11 @@
                 <li class="product brandon <% if stop["selected"] %>selected<% end %> <% if stop["class"] == 'five' %>last<% end %>">
                     <div class="circle"><%= stop["count"] %></div>
                     <div class="sep"></div>
-                    <p><%= stop["html"].html_safe %></p>
-
-                    <!--<div class="tooltip">-->
-                        <!--<img src="<%= stop["image"] %>" height="254">-->
-                    <!--</div>-->
+                    <%- if stop["count"] == 50 %>
+                        <p class="big-price-label"><%= stop["html"].html_safe %></p>
+                    <%- else %>
+                        <p class="small-price-label"><%= stop["html"].html_safe %></p>
+                    <%- end %>
                 </li>
             <% end %>
         </ul>
